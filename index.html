@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+            <div class="leftBar">
+                <p style="font-size: 20px; margin-left: 1%; color: white;">The <br> company</p>
+                <button class="leftBarButtons">Home</button>
+                <button class="leftBarButtons">Showcase</button>
+                <button class="leftBarButtons">Services</button>
+                <button class="leftBarButtons">Designers</button>
+                <button class="leftBarButtons">Package</button>
+                <button class="leftBarButtons">Contact</button>
+            </div>
+            <div class="rightBar">
+                <h1 style=" font-size: 30px; color:black">Interior Design</h1>
+                <div>
+                    <h1 style="color:rgb(230, 100, 70) ">Showcase</h1>
+                    <hr >
+                    
+                    <table id="packageTable">
+                        <tr>
+                            <td>
+                                <img src="./images/showcase-01.jpg" alt="design">
+                            </td>
+                            <td>
+                                <img src="./images/showcase-02.jpg" alt="design">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="./images/showcase-03.jpg" alt="">
+                            </td>
+                            <td>
+                                <img src="./images/showcase-04.jpg" alt="">
+
+                            </td> 
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="./images/showcase-05.jpg" alt="">
+                            </td>
+                            <td>
+                                <img src="./images/showcase-06.jpg" alt="">
+                            </td>
+                        </tr>
+                    </table>
+                    
+                </div>
+                <br><br><br>
+                <div class="Services">
+                    <h1>Services</h1>
+                    <hr>
+                    <p>We are interior design service that focused on whats best for your home and whats best for you!
+                    Some text about our services-what we do and what we offer. We are "Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                       consequat
+                    </p>
+                </div>
+                <br><br><br>
+                <div class="designers">
+                    
+                        <h1>Designers</h1>
+                        <hr>
+                        <p>We are interior design service that focused on whats best for your home and whats best for you!
+                        Some text about our services-what we do and what we offer. We are "Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat
+                        </p>
+                        <ul>
+                            <li>
+                                <img src="./images/person-01.jpg" alt="person">
+                                <h4>Jhon Doe</h4>
+                                <h6>CEO and Founder</h6>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Delectus, laborum dolor.
+                                    Sapiente non, inventore ea officiis laboriosam maxime modi.Excepturi molestias, 
+                                    ullam placeat harum eveniet deserunt ipsa culpa minima dolorem?
+                                </p>
+                            </li>
+                            <li>
+                                <img src="./images/person-02.jpg" alt="person">
+                                <h4>Jane Doe</h4>
+                                <h6>CEO and Founder</h6>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Delectus, laborum dolor. 
+                                    Sapiente non, inventore ea officiis laboriosam maxime modi. Excepturi molestias, 
+                                    ullam placeat harum eveniet deserunt ipsa culpa minima dolorem?
+                                </p>
+                            </li>
+                            <li>
+                                <img src="./images/person-03.jpg" alt="person">
+                                <h4>Michel Ross</h4>
+                                <h6>CEO and Founder</h6>
+                                <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit.Delectus, laborum dolor. 
+                                    Sapiente non, inventore ea officiis laboriosam maxime modi.Excepturi molestias, 
+                                    ullam placeat harum eveniet deserunt ipsa culpa minima dolorem?
+                                </p>
+                            </li>
+                        </ul>
+                </div>
+                <br><br><br>
+
+                <div class="Package">
+                    <h1>Package</h1>
+                    <hr>
+                    <p>We are interior design service that focused on whats best for your home and whats best for you!
+                     Some text about our services-what we do and what we offer. We are "Lorem ipsum dolor sit amet,
+                     consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                     Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                     consequat
+                    </p>
+
+                    <table id="packageTable">
+                        <tr>
+                            <th style="background-color: rgba(97, 92, 92, 0.719);">Basic</th>
+                            <th style="background-color: orangered;">Pro</th>
+                        </tr>
+                        <tr>
+                            <td>FloorPlanning</td>
+                            <td>FloorPlanning</td>
+                        </tr>
+                        <tr>
+                            <td>10 hours support</td>
+                            <td>50 hours support</td>
+                        </tr>
+                        <tr>
+                            <td>photography</td>
+                            <td>photography</td>
+                        </tr>
+                        <tr>
+                            <td>20% furniture discount</td>
+                            <td>50% furniture discount</td>
+                        </tr>
+                        <tr>
+                            <td>good deals</td>
+                            <td>great deals</td>    
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="display: flex; justify-content: center;">
+                                    <button type="button" id="basicMinusButton" onclick="document.getElementById('basicPrice').innerHTML = basicMinusFunction()">-</button>
+                                    <p id="basicPrice">$199</p>
+                                    <button type="button" id="basicPlusButton" onclick =" document.getElementById('basicPrice').innerHTML = basicPlusFunction()">+</button>
+                                </div>
+                            </td>
+                            <td>
+                                <div style="display: flex; justify-content: center;">
+                                    <button type="button" onclick="document.getElementById('proPrice').innerHTML = proMinusFunction()">-</button>
+                                    <p id="proPrice">$249</p>
+                                    <button type="button" onclick="document.getElementById('proPrice').innerHTML = proPlusFunction()">+</button>
+                                </div>
+                            </td>
+                        </tr>                   
+                        <tr>
+                            <td>
+                                <button type="button" onclick="document.getElementById('thankYouBasic').innerHTML = thankYouBasicFunction()">sign up </button>                           
+                            </td>
+                            <td>
+                                <button type="button" onclick="document.getElementById('thankYouPro').innerHTML = thankYouProFunction()">sign up </button>                           
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="thankYouBasic" style="color: gray;">dnsajdnkj</td>
+                            <td id="thankYouPro">dnsajdnkj</td>
+                        </tr>
+                    </table>
+
+                </div>
+                <br><br><br>
+
+                <div class="contact">
+                    <h1>Contact</h1>
+                    <hr>
+                    <p>Do you want us to style your home? Fill out the for with details. we love meeting new people.</p>
+                    <form action="" target="_parent" autocomplete="on">
+                        <label for="name">Name</label>
+                        <input type="text" id = "name" name="name" autocomplete="name" >
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" autocomplete="email">
+                        <label for="message">Message</label>
+                        <input type="text" id="message" name="message" autocomplete="on" placeholder="write us ........">
+                        <input type="submit" id="submitButton"  value="Send Message"  onclick="checkInputValidity()">                        
+                    </form>
+                </div>
+                <br><br><br>
+            </div>
+</body>
+</html>
